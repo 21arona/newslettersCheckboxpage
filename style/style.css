@@ -1,0 +1,66 @@
+/* Fixer la barre de navigation en haut */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcb05;
+    /* Couleur de fond de la barre de navigation */
+    padding-right: 5px;
+    /* Ajouter un peu de padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* S'assurer que la barre de navigation est au-dessus des autres éléments */
+    box-sizing: border-box;
+    /* Inclure le padding dans la largeur totale */
+}
+
+/* Logo dans la barre de navigation */
+header img {
+    height: 60px;
+    /* Ajuster la taille du logo selon vos besoins */
+}
+
+/* Liste et lien dans la barre de navigation */
+header li {
+    list-style: none;
+    margin: 0;
+    /* Éviter les marges par défaut de la liste */
+}
+
+/* Lien dans la barre de navigation */
+header a {
+    color: white;
+    /* Couleur du texte du lien */
+    background-color: black;
+    /* Couleur de fond du lien */
+    padding: 10px 20px;
+    /* Ajouter un peu de padding */
+    text-decoration: none;
+    /* Supprimer le soulignement du texte */
+    border-radius: 4px;
+    /* Ajouter des coins arrondis */
+    margin-left: 20px;
+    /* Ajuster la marge pour rapprocher le lien */
+}
+
+header a:hover {
+    background-color: green;
+    /* Couleur de fond au survol */
+    color: white;
+    /* Couleur du texte au survol */
+}
+
+/* Éviter la barre de défilement horizontale */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Empêcher le défilement horizontal */
+    padding-top: 60px;
+    /* Ajouter un padding en haut pour éviter le masquage du contenu */
+    box-sizing: border-box;
+    /* Inclure le padding dans la largeur totale */
+}
