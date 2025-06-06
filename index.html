@@ -112,9 +112,14 @@
         <label class="label">Agree to Terms</label>
         <div class="control">
           <label class="checkbox">
-            <input type="checkbox" name="Agree To Terms" value="yes" /> Accipio
-            ut iterum contingar pro ulterioribus informationibus vel
-            communicatione.
+            <input
+              checked
+              required
+              type="checkbox"
+              name="Agree To Terms"
+              value="yes"
+            />
+            I agree to be contacted again for updates and further information.
           </label>
         </div>
       </div>
@@ -148,18 +153,17 @@
           </button>
         </div>
       </div>
+      <div
+        id="message"
+        style="
+          display: none;
+          margin: 20px;
+          padding: 10px;
+          border-radius: 4px;
+          font-weight: bold;
+        "
+      ></div>
     </form>
-
-    <div
-      id="message"
-      style="
-        display: none;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 4px;
-        font-weight: bold;
-      "
-    ></div>
 
     <script>
       const form = document.getElementById("form");
