@@ -22,6 +22,7 @@
       background-position: center;
       margin: 0;
       padding-top: 50px;
+      min-height: 100vh;
     "
   >
     <div class="Home">
@@ -269,26 +270,33 @@
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(99, 84, 84, 0.1);
             background-color: white;
+            min-height: 60vh;
           }
+          .field .label {
+          font-size: x-large; /* augmente la taille du texte */
+          margin-bottom: 3rem;
+        }
 
-          body {
-            background-color: #f5f5f5;
-          }
-          @media (max-width: 480px) {
         html,
         body {
     font-size: x-large;
           margin: 0;
           padding: 0;
-          min-height: 90vh;
+          min-height: 100vh;
         }
+
+          body {
+            background-color: #f5f5f5;
+          }
+          @media (max-width: 480px) {
+
 
         .form-wrapper {
           margin: 10px;
           padding: 1rem;
           box-shadow: none;
           border-radius: 0;
-          min-height: 100vh; /* garantit que le formulaire occupe toute la hauteur */
+          min-height: 90vh; /* garantit que le formulaire occupe toute la hauteur */
         }
 
         .field .label {
