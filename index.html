@@ -283,11 +283,13 @@
       }
 
       .form-wrapper {
-        margin: 10px;
-        padding: 1rem;
-        box-shadow: none;
-        border-radius: 0;
-        height: 90vh;
+        .form-wrapper {
+          margin: 10px;
+          padding: 1rem;
+          box-shadow: none;
+          border-radius: 0;
+          min-height: 100vh; /* garantit que le formulaire occupe toute la hauteur */
+        }
       }
 
       .field .label {
